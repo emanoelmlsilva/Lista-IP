@@ -1,4 +1,4 @@
-quant = int(input('Infome a quantidade de pissoas: '))
+quant = int(input('Infome a quantidade de pessoas: '))
 tot = quant
 nvan = 20
 nbus = 42
