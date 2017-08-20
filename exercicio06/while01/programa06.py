@@ -1,4 +1,5 @@
-while(True):
+perg = 's'
+while(perg):
         num1 = int(input('Informe o primeiro valor: '))
         num2 = int(input('Informe o segundo valor: '))
         if(num1 <= 0 or num2 <= 0):
