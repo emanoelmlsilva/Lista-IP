@@ -1,0 +1,30 @@
+import Revistas
+lista=[]
+listaE=[]
+listaC=[]
+t = ' '
+while True:
+	t = str.lower(input('Titulo da revista: '))
+	if t == 'fim':
+		break
+	e = str.lower(input('Nome da editora: '))
+	c = float(input('Digite o custo da revista: '))
+	lista.append(t)
+	listaE.append(e)
+	listaC.append(c)
+
+print('================================')
+p = str.lower(input('Informe o titulo da Revista para saber a editora: '))
+print(Revistas.pesquisaEditora(lista,p,listaE))
+
+print('=================================')
+i=0
+pq = str.lower(input('Informe o titulo para saber a quantidade: '))
+cont = Revistas.pesquisaQuantVendas(pq,lista)
+if
+print(cont)
+
+print('==================================')
+pc = str.lower(input('Informe o titulo para saber o custo: '))
+custo = Revistas.pesquisaValor(pc,lista,listaC)
+print(custo)
