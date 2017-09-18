@@ -38,24 +38,18 @@ print('Quantidade de revistas da editora globo {}'.format(conted))
 
 print('=========================================')
 #titulo mais vendido
-maior=1
+maior=0 #1
 v=[]
 revista = ' '
 for i in lista:
 	vend=0
 	res=0
-	y=0
 	l = lista[:]
-	x=0
-	print('i {}'.format(i))
-	while True:
-		if i == lista[x]:
+	for x in l:
+		if i == x:
 			vend+=1
 			res+=1
-			del (lista[x])
-		if len(l)-1 <= 0:
-			break
-		x += 1
+			lista.remove(x)
 	v.append(res)
 	if vend > maior:
 		maior = vend
@@ -66,7 +60,7 @@ print('=================================')
 #media das revistas com mais de 100 exemplares vendidos
 soma = 0
 x = 0
-print('v {}'.format(v))
+#print('v {}'.format(v))
 for i in v:
 	if i > 2:
 		soma += i
