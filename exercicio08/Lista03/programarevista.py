@@ -60,9 +60,8 @@ print('=================================')
 #media das revistas com mais de 100 exemplares vendidos
 soma = 0
 x = 0
-#print('v {}'.format(v))
 for i in v:
-	if i > 2:
+	if i > 100:
 		soma += i
 		x +=1
 if soma > 0:
