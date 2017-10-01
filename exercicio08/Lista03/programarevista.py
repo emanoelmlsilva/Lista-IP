@@ -46,8 +46,7 @@ for x,i in enumerate(lista):
 			vend+=1
 			res+=1
 			lista.remove(c)
-	if res >= 2: #contagem das revistas com mais de 100 exemplares
-		v.append(res)
+	if res >= 100: #contagem das revistas com mais de 100 exemplares
 		lQuant.append(i[2])
 		cont+=1
 	if vend > maior:
